@@ -9,7 +9,7 @@ name: about
 <dl class="dl-horizontal">
   <dt>E-mail</dt><dd><a href="mailto:jin.phd@gmail.com">jin.phd@gmail.com</a></dd>
   <dt>GitHub</dt><dd><a href="https://github.com/jinmingjian">Jin Mingjian</a></dd>
-  <dt>LinkedIn</dt><dd><a href="http://www.linkedin.com/in/Jin Mingjian">Jin Mingjian</a></dd>
+  <dt>LinkedIn</dt><dd><a href="http://www.linkedin.com/in/jinmingjian">Jin Mingjian</a></dd>
   <dt>Google+</dt><dd><a href="https://plus.google.com/u/0/100977067839263034722">Jin Mingjian</a></dd>
   <dt>oldder blog:</dt><dd><a href="http://jmj-eclipse.blogspot.com/">jmj-eclipse.blogspot.com/</a></dd>
 </dl>
