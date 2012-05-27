@@ -1,0 +1,39 @@
+@media (min-width: 980px) {
+  body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  }
+}
+
+.navbar-inner {
+  -webkit-box-shadow: #999999 0px 4px 8px 0;
+  -moz-box-shadow: #999999 0px 4px 8px 0;
+  box-shadow: #999999 0px 4px 8px 0;
+}
+ 
+.navbar .feed-link {
+  background-image: url(/assets/img/feed-icon-14x14.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center;
+  padding-left: 18px !important;
+  margin-left: 10px;
+}
+
+h1, h2, h3 {
+  font-family: "IM Fell English SC";
+  text-transform: uppercase;
+}
+
+.page-header h1 small {
+  margin-left: 0.5em;
+}
+
+.page-post-header h1 small {
+  margin-left: 0;
+  margin-top: 0.5em;
+  display: block;
+}
+
+ul.main-posts li {
+  margin-bottom: 1em;
+}
+

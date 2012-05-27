@@ -1,0 +1,31 @@
+---
+layout: default
+title: Jin Mingjian <small>Cloud .next</small>
+name: home
+---
+
+<div class="row">
+  <div class="span8">
+    <ul class="unstyled main-posts">
+    {% for post in site.posts %}
+      <li>
+        {{ post.date | date_to_long_string }}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="span4">
+    <ul class="nav nav-list">
+      {% if site.tags != empty %}
+        <li class="nav-header">All tags</li>
+        {% for tag in site.tags %}
+          <li>
+            <i class="icon-tag"></i>{{ tag[0] }}
+          </li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </div>
+</div>
+

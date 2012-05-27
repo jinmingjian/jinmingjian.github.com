@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="span8">
+    {{ content }}
+
+    <hr>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'jinmingjian';
+        var disqus_identifier = '{{ page.id }}';
+        var disqus_title = '{{ page.title | strip_html }}';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div> 
+  <div class="span4">
+    <ul class="nav nav-list">
+      <li class="nav-header">Published on</li>
+      <li>{{ page.date | date_to_long_string }}
+
+      {% if page.modified %}
+      <li class="nav-header">Last modified on</li>
+      <li>{{ page.modified | date_to_long_string }}
+      {% endif %}
+
+      {% if page.tags != empty %}
+        <li class="nav-header">Tags</li>
+        {% for tag in page.tags %}
+          <li>
+            <i class="icon-tag"></i>{{ tag }}
+          </li>
+        {% endfor %}
+      {% endif %}
+
+      {% if site.related_posts != empty %}
+        <li class="nav-header">Related posts</li>
+        {% for related in site.related_posts %}
+        <li>
+          <a href="{{ related.url }}"><i class="icon-bookmark"></i>{{ related.title }}</a>
+        </li>
+        {% endfor %}
+      {% endif %}
+    </ul>    
+  </div>
+</div>

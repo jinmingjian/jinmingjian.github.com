@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title and page.name != "home" %} {{ page.title | strip_html }} | {% endif %} Jin Mingjian: Cloud .next</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jin Mingjian">
+
+  <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=IM+Fell+English+SC">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/atom+xml" title="Atom feed" href="/atom.xml">
+
+  <script src="/assets/js/jquery-1.7.2.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2238703-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/">Jin Mingjian: Cloud .next</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li {% if page.name == "home" %} class="active" {% endif %}><a href="/">Home</a></li>
+            <li {% if page.name == "about" %} class="active" {% endif %}><a href="/about.html">About</a></li>
+            <li><a href="/atom.xml" class="feed-link">Atom feed</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-header {% if page.id %} page-post-header {% endif %} ">
+      <h1>{{ page.title }}</h1>
+    </div>
+
+    {{ content }}
+ 
+    <hr>
+    <div>
+      <p>&copy; {{ site.author }} {{ site.time | date: "%Y" }}</p>
+      <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a> Published under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+    </div>
+  </div>
+</body>
+</html>
+
