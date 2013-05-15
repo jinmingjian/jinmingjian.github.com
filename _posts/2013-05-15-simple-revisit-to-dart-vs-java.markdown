@@ -14,15 +14,15 @@ The Nikolay's port indeed shows the speed of Java is ~12% slower than that of Da
 
 
 ![results of Dart VM 0.1.2.0_r22600, linux x64](2013-05-15-simple-revisit-to-dart-vs-java-img/dartvm_linux64.png)
-----
+
     results of Dart VM 0.1.2.0_r22600 with linux x64
 
 ![results of OpenJDK 64-Bit Server VM 1.8.0-internal 25.0-b31](2013-05-15-simple-revisit-to-dart-vs-java-img/java8_linux64.png)
-----
+
     results of Dart VM 0.1.2.0_r22600 with linux x64
 
 ![results of Dart VM 0.1.2.0_r22600, linux 32bit](2013-05-15-simple-revisit-to-dart-vs-java-img/dartvm_linux32.png)
-----
+
     32bit Dart VM gets not very much improvement
 
 OK, here is my note for this: 
@@ -53,14 +53,14 @@ Finally, it is very glad to see the Dart now can challenge Java at least in some
 
 Lastly, it will be fun to show one of my hobby time Dart based work to the public,
 ![a logo made by cubes](2013-05-15-simple-revisit-to-dart-vs-java-img/cubee_logo.png)
-----
+
     a logo made by cubes
 
 Simple, but the background of it is a high performance 2.5D HTML5 game engine. It can process 5,000,000+ unit cubes(in its virtual 3D world)/s without hardware acceleration in the last year.
 
 Easily improve it into a minecraft thing like this:
 ![2.5D "minecraft" blocks](2013-05-15-simple-revisit-to-dart-vs-java-img/engine_early.png)
-----
+
     "2.5D 'minecraft' blocks<pre>
 
 
