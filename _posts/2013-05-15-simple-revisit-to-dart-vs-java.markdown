@@ -31,7 +31,7 @@ The 32bit Dart VM does not change the conclusion much, as following:
 
 ![results of Dart VM 0.1.2.0_r22600, linux 32bit](/assets/img/posts/simple_img/dartvm_linux32.png)
 
-_**32bit Dart VM gets not very much improvement**_
+_**32bit Dart VM does not get very much improvement**_
 
 
 ## Simple Notes
