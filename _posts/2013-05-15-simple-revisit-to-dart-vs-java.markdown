@@ -6,20 +6,23 @@ tags: ["Dart", "Java", "benchmark"]
 
 In these days, one benchmark article about "Dart vs Java" has pushed into the front page of Infoq [1], in which Dart attracts eyes again. As a performance addict and Javaer/Dartisan, I have a definite interesting to say something.
 
-The first original benchmark result is posted by Nikolay Botev(a.k.a. bono8106)here [2]. To my surprise, Charles(a.k.a. headius), as a JRuby/JVM guy, does not complete to hit a homer:) The key here is, we still compare apples and oranges rather than author's "1-to-1 port"[2][3].
+The first original benchmark result is posted by Nikolay Botev(a.k.a. bono8106)here [2]. To my surprise, Charles(a.k.a. headius), as a JRuby/JVM guy, does not complete to hit a homer:) The key here is, we still compare apples and oranges rather than author's "1-to-1 port" [2] [3].
 
-I have done standalone porting [4] of Dart's DeltaBlue [5] based on the Nikolay's BenchmarkBase[6](I assume this measure class has no problem it self) in the day before yesterday.
+I have done standalone porting [4] of Dart's DeltaBlue [5] based on the Nikolay's BenchmarkBase [6](I assume this measure class has no problem it self) in the day before yesterday.
 
 The Nikolay's port indeed shows the speed of Java is ~12% slower than that of Dart the in my linux x64. As my little tweaking, the result has been reversed!
 
 
 ![results of Dart VM 0.1.2.0_r22600, linux x64](2013-05-15-simple-revisit-to-dart-vs-java-img/dartvm_linux64.png)
+----
     results of Dart VM 0.1.2.0_r22600 with linux x64
 
 ![results of OpenJDK 64-Bit Server VM 1.8.0-internal 25.0-b31](2013-05-15-simple-revisit-to-dart-vs-java-img/java8_linux64.png)
+----
     results of Dart VM 0.1.2.0_r22600 with linux x64
 
 ![results of Dart VM 0.1.2.0_r22600, linux 32bit](2013-05-15-simple-revisit-to-dart-vs-java-img/dartvm_linux32.png)
+----
     32bit Dart VM gets not very much improvement
 
 OK, here is my note for this: 
@@ -50,15 +53,17 @@ Finally, it is very glad to see the Dart now can challenge Java at least in some
 
 Lastly, it will be fun to show one of my hobby time Dart based work to the public,
 ![a logo made by cubes](2013-05-15-simple-revisit-to-dart-vs-java-img/cubee_logo.png)
+----
     a logo made by cubes
 
 Simple, but the background of it is a high performance 2.5D HTML5 game engine. It can process 5,000,000+ unit cubes(in its virtual 3D world)/s without hardware acceleration in the last year.
 
 Easily improve it into a minecraft thing like this:
 ![2.5D "minecraft" blocks](2013-05-15-simple-revisit-to-dart-vs-java-img/engine_early.png)
+----
     "2.5D 'minecraft' blocks<pre>
 
-----------------------------------------------------------------------------------------------
+
 [1]: http://www.infoq.com/news/2013/05/Dart-Java-DeltaBlue 
 [2]: http://bonovox.be/blog/?p=128
 [3]: http://www.reddit.com/r/programming/comments/1e2jhr/dart_vs_java_the_deltablue_benchmark/
