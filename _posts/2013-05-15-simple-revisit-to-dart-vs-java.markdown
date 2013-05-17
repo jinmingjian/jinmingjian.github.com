@@ -77,7 +77,7 @@ _**"2.5D 'minecraft' blocks**_
 
 I hope to open source it with my mysterious backend in this year:) If you like to work with this kind of project or sponsor it, let me know!:)
 
-Updated:
+_**Updated:**_
 
 as Vyacheslav suggested, I re-benchmark both. there is indeed a slightly improvement form the timing result, especially for ia32. However, the basic result is still hold. 
 
