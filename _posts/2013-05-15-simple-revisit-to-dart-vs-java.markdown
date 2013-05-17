@@ -77,6 +77,19 @@ _**"2.5D 'minecraft' blocks**_
 
 I hope to open source it with my mysterious backend in this year:) If you like to work with this kind of project or sponsor it, let me know!:)
 
+Updated:
+
+as Vyacheslav suggested, I re-benchmark both. there is indeed a slightly improvement form the timing result, especially for ia32. However, the basic result is still hold. 
+
+![using the latest Dart SDK nightly](/assets/img/posts/simple_img/latest_benchmark_snapshot.png)
+
+Nextl... I assume Vyacheslav is the export of Dart VM. As Vyacheslav read this blog, I plan to do the following tweakings: 
+1. modify the timing to measuring the direct loop;(we do not use the threshhold value way)
+2. revert the invokevirtual to invokeinterface by change the atual type from Array back to List.
+3. compare the assembly codes.
+
+thanks, all! 
+
 
 [1]: http://www.infoq.com/news/2013/05/Dart-Java-DeltaBlue 
 [2]: http://bonovox.be/blog/?p=128
